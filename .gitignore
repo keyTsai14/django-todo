@@ -1,0 +1,65 @@
+# Django #
+###############
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media
+staticfiles/
+
+# Backup files # 
+###############
+*.bak 
+*.tmp
+
+# IDE #
+###############
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment #
+###############
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# Database #
+###############
+*.sqlite3
+*.db
+
+# Node/NPM #
+###############
+node_modules/
+npm-debug.log*
+
+# Coverage reports #
+###############
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+
+# Test files #
+###############
+/test_*.py
+
+# macOS #
+###############
+.DS_Store
+._*
+
+# Windows #
+###############
+Thumbs.db
+ehthumbs.db
+Desktop.ini
