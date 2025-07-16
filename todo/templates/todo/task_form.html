@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% if form.instance.pk %}Edit{% else %}New{% endif %} Task</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="{% url 'task_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+    <!-- Add this under the form field -->
+    <small class="form-text text-muted">Please use YYYY-MM-DD format (e.g., 2025-09-19)</small>
+{% endblock %}
